@@ -9,6 +9,7 @@ This project aims to predict **high-potential HR service leads** based on compan
 
 ### **`main.ipynb`**
 This Jupyter Notebook contains the entire **workflow of the project**, including:
+
 - **Data Preprocessing**
   - Handling missing values
   - Extracting datetime-based features  
@@ -16,16 +17,34 @@ This Jupyter Notebook contains the entire **workflow of the project**, including
   - Encoding categorical variables  
   - Standardizing numerical features  
   - Handling class imbalance using **SMOTE**  
+
 - **Feature Engineering**
   - Creating new features from `last_funding_date`
-  - Removing irrelevant columns
+  - Removing irrelevant columns  
+
 - **Model Training**
-  - Training multiple ML models including Logistic Regression, Random Forest, Gradient Boosting, and XGBoost
+  - Training multiple ML models including Logistic Regression, Random Forest, Gradient Boosting, and XGBoost  
+
 - **Model Evaluation**
   - Performance metrics (F1-score, Precision, Recall)
-  - Confusion matrix analysis
+  - Confusion matrix analysis  
+
 - **Hyperparameter Tuning**
   - Tuning XGBoost using **RandomizedSearchCV**  
+
+### **Best Model: XGBoost**
+After hyperparameter tuning, the best model is **XGBoost**, achieving the following performance:
+
+| Metric      | Value   |
+|------------|---------|
+| **Accuracy**  | 0.972533 |
+| **F1-Score**  | 0.902408 |
+| **Precision** | 0.991827 |
+| **Recall**    | 0.954424 |
+
+This model was selected based on **F1-score, precision, and recall**, ensuring a balance between false positives and false negatives.
+
+---
 
 ---
 
@@ -70,3 +89,4 @@ This file contains:
   - **Hyperparameter tuning results**
   - **Final submission process**
   - **Refer to this document** to understand the complete project workflow.
+
