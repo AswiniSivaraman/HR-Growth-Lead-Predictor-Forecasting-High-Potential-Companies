@@ -31,17 +31,16 @@ This Jupyter Notebook contains the entire **workflow of the project**, including
 
 ### **`saved_scaler/`**
 This folder contains:
-- **`standard_scaler.pkl`** → The **trained StandardScaler object** used to standardize numerical features before training the model.  
-- This ensures consistency when applying transformations to test and holdout datasets.
+  - **`standard_scaler.pkl`** → The **trained StandardScaler object** used to standardize numerical features before training the model.  
 
 ---
 
 ### **`dataset/`**
 This folder contains:
-- **`train.csv`** → Original training dataset  
-- **`test.csv`** → Original test dataset  
-- **`holdout.csv`** → Dataset for final prediction  
-- **`cleaned_train.csv`** → Preprocessed training data after cleaning, encoding, and scaling  
+  - **`train.csv`** → Original training dataset  
+  - **`test.csv`** → Original test dataset  
+  - **`holdout.csv`** → Dataset for final prediction  
+  - **`cleaned_train.csv`** → Preprocessed training data after cleaning, encoding, and scaling  
 
 Each dataset has undergone **proper preprocessing steps**, ensuring **data consistency** across training, validation, and testing.
 
@@ -49,25 +48,25 @@ Each dataset has undergone **proper preprocessing steps**, ensuring **data consi
 
 ### **`best_model/`**
 This folder contains:
-- **`best_xgb_model.pkl`** → The **best-performing XGBoost model** after hyperparameter tuning.  
-- This model was trained using optimized parameters to improve accuracy, F1-score, and recall.
+  - **`best_xgb_model.pkl`** → The **best-performing XGBoost model** after hyperparameter tuning.  
+  - This model was trained using optimized parameters to improve accuracy, F1-score, and recall.
 
 ---
 
 ### **`submission/`**
 This folder contains:
-- **`submission.csv`** → The **final prediction file**, containing: company_id,is_hot_lead.
-- This file was generated using the best-trained model and is formatted according to the challenge submission requirements.
+  - **`submission.csv`** → The **final prediction file**, containing: company_id,is_hot_lead.
+  - This file was generated using the best-trained model and is formatted according to the challenge submission requirements.
 
 ---
 
 ### **`project_report/`**
 This file contains:
-- **Comprehensive project documentation** detailing:
-- **Problem statement**
-- **Data preprocessing steps**
-- **Feature engineering**
-- **Model training and evaluation**
-- **Hyperparameter tuning results**
-- **Final submission process**
-- **Refer to this document** to understand the complete project workflow.
+  - **Comprehensive project documentation** detailing:
+  - **Problem statement**
+  - **Data preprocessing steps**
+  - **Feature engineering**
+  - **Model training and evaluation**
+  - **Hyperparameter tuning results**
+  - **Final submission process**
+  - **Refer to this document** to understand the complete project workflow.
